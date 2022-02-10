@@ -11,16 +11,7 @@ public class PlayingCard {
             "Валет", "Королева", "Король", "Туз"
     };
 
-    private String suit = null;
-    private String rank = null;
-
-    public PlayingCard(String suit, String rank) {
-        this.suit = suit;
-        this.rank = rank;
-    }
-
-    @Override
-    public String toString() {
-        return rank+" "+suit;
+    public static String card(int suit, int rank) {
+        return (RANK_LIST[rank] + " " + SUITS_LIST[suit] + " | ");
     }
 }
